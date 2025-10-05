@@ -10,7 +10,7 @@ mmono is an overengineered mono hangboard pickup for climbing.
 
 ## Design
 
-This project asks: What is a 20 mm edge?
+What is a 20 mm edge?
 
 For a 90° angle, it’s simple.
 
@@ -22,9 +22,9 @@ But a 90° edge is harsh on the skin. Sharp edges concentrate stress at a single
 
 <img width="512" height="512" alt="edge fillet" src="https://github.com/user-attachments/assets/279dc64d-3f09-49bb-b1bd-50eb40e3fb96" />
 
-> An edge fillet is a smooth, curved surface with a constant radius that rounds off a sharp corner or transition between two intersecting faces.
+> Edge Fillet: A smooth, curved surface with a constant radius that rounds off a sharp corner or transition between two intersecting faces.
 
-Fillets are usually described by their edge radius—the larger the radius, the rounder the edge.
+Fillets are usually described by their Edge Radius — the larger the radius, the rounder the edge.
 
 <img width="512" height="512" alt="edgefillet" src="https://github.com/user-attachments/assets/bc7d4cd9-f048-4b06-8794-05052caf1db6" />
 
@@ -36,15 +36,17 @@ Unfortunately, there is no universal fillet radius for hangboards. Different bra
 | **Beastmaker**| 10 mm      | 8 mm                 | [Test4Climbing](https://test4climbing.com/equipment-needed) |
 | **Lattice**   | 10 mm      | 10 mm                | [Climbing.com](https://www.climbing.com/skills/training/tom-randalls-guide-to-better-hangboarding-part-1/) |
 
-> Note: More data would be great—this information is hard to find.
+> Note: Needs more data but is hard to find.
 
 Where there is a fillet, the effective edge depth changes. What counts as “correct” depth (red lines)?
 
-This might sound negligible, but for climbers, millimeters matter.
+This might sound negligible, but millimeters matter for climbers.
 
 <img width="512" height="512" alt="20mm?" src="https://github.com/user-attachments/assets/45418436-d21e-4cf9-a793-9c0d2cd5a552" />
 
 To objectively define a true edge depth, we must agree on some definitions:
+
+<img width="512" height="512" alt="asdf" src="https://github.com/user-attachments/assets/e6e96257-e4d4-4457-a92b-3dfff37607fa" />
 
 - Total Depth: The total depth, ignoring edge radius. (90° diagram)
 - Edge Radius: The measurement of a curved edge
@@ -77,7 +79,7 @@ Use the unit circle as a reference
 Given Edge Radius & Effective Depth, calculate Total Depth
 
 ```
-Set edge_radius (blue) =  8mm
+Set edge_radius (blue) = 8mm
 Set effective_depth (dotted) = 20mm
 
 Solve for total_depth (green)
@@ -91,7 +93,7 @@ green = dotted + pink
 
 <img width="512" height="512" alt="fff" src="https://github.com/user-attachments/assets/df3e8c50-2f41-404b-9bdf-484f69bc2153" />
 
-There are a few ways to calculate:
+A one line equation
 
 ```
 total_depth = effective_depth + (edge_radius * (1 - cos(45))
@@ -99,7 +101,7 @@ total_depth = effective_depth + (edge_radius * (1 - cos(45))
 total_depth = effective_depth + (edge_radius * (1 - 0.5 ** 0.5))
 ```
 
-Code
+Python
 
 ```python
 import math
@@ -114,10 +116,14 @@ print(total_depth)
 # total_depth = 22.34314575050762
 ```
 
-Finally, use calculated Total Depth to extrude your mono with a Fillet Radius.
+Finally, use calculated Total Depth to extrude your mono 
 
 <img width="3580" height="2796" alt="Screenshot 2025-10-05 at 6 21 16 PM" src="https://github.com/user-attachments/assets/74177d5f-b1e8-4e18-a40b-b5c21789626b" />
 
+Then create your Fillet Radius.
+
 <img width="3668" height="2884" alt="Screenshot 2025-10-05 at 6 24 33 PM" src="https://github.com/user-attachments/assets/502f97b1-1561-4cff-884c-abe4b585ae7c" />
 
-Conclusion: This looks like an avocdaco 🥑
+Conclusion: A 22.34314575050762mm deep mono + 8mm fillet radius gives exactly 20mm effective edge depth.
+
+This looks like an avocdaco 🥑
