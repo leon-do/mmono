@@ -2,9 +2,9 @@
 
 mmono is an overengineered mono hangboard pickup for climbing.
 
-## Diagrams
+## Dimensions
 
-<img src="https://github.com/user-attachments/assets/6f6c6137-87c2-44b2-810e-5dd198f610e1" />
+<img width="3668" height="2884" alt="Screenshot 2025-10-05 at 6 29 35 PM" src="https://github.com/user-attachments/assets/5597e96b-52b6-4659-b957-9eba6fe262b5" />
 
 <img src="https://github.com/user-attachments/assets/c39d3a4a-4358-43b5-bdd5-5bace4f8c19c" />
 
