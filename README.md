@@ -2,6 +2,12 @@
 
 mmono is an overengineered mono hangboard pickup for climbing.
 
+## Diagrams
+
+<img src="https://github.com/user-attachments/assets/6f6c6137-87c2-44b2-810e-5dd198f610e1" />
+
+<img src="https://github.com/user-attachments/assets/c39d3a4a-4358-43b5-bdd5-5bace4f8c19c" />
+
 ## Design
 
 This project asks: What is a 20 mm edge?
@@ -64,14 +70,54 @@ Now that Effective Length is defined, we can calculate Effective Depth.
 
 <img width="512" height="512" alt="effectiveDepth" src="https://github.com/user-attachments/assets/0a327fa4-948a-4794-90ec-89df3ceb442a" />
 
+Use the unit circle as a reference
 
+<img width="512" height="1835" alt="Unit-circle" src="https://github.com/user-attachments/assets/3fccecff-cd92-4512-89cb-31054e01ee8e" />
 
-<img width="512" height="512" alt="rad" src="https://github.com/user-attachments/assets/9b531ac2-8ee3-409c-8e1f-61c3cee61e90" />
+Given Edge Radius & Effective Depth, calculate Total Depth
 
+```
+Set edge_radius (blue) =  8mm
+Set effective_depth (dotted) = 20mm
 
+Solve for total_depth (green)
 
-## Diagrams
+red_line = cos(45) * 8mm
+pink_line = edge_radius - red_line
 
-<img src="https://github.com/user-attachments/assets/6f6c6137-87c2-44b2-810e-5dd198f610e1" />
+total_depth = effective_depth + pink_line
+green = dotted + pink
+```
 
-<img src="https://github.com/user-attachments/assets/c39d3a4a-4358-43b5-bdd5-5bace4f8c19c" />
+<img width="512" height="512" alt="fff" src="https://github.com/user-attachments/assets/df3e8c50-2f41-404b-9bdf-484f69bc2153" />
+
+There are a few ways to calculate:
+
+```
+total_depth = effective_depth + (edge_radius * (1 - cos(45))
+
+total_depth = effective_depth + (edge_radius * (1 - 0.5 ** 0.5))
+```
+
+Code
+
+```python
+import math
+
+effective_depth = 20
+
+edge_radius = 8
+
+total_depth = effective_depth + (edge_radius * (1 - 0.5 ** 0.5))
+
+print(total_depth)
+# total_depth = 22.34314575050762
+```
+
+Finally, use calculated Total Depth to extrude your mono with a Fillet Radius.
+
+<img width="3580" height="2796" alt="Screenshot 2025-10-05 at 6 21 16 PM" src="https://github.com/user-attachments/assets/74177d5f-b1e8-4e18-a40b-b5c21789626b" />
+
+<img width="3668" height="2884" alt="Screenshot 2025-10-05 at 6 24 33 PM" src="https://github.com/user-attachments/assets/502f97b1-1561-4cff-884c-abe4b585ae7c" />
+
+Conclusion: This looks like an avocdaco 🥑
