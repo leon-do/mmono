@@ -1,4 +1,4 @@
-# Climbers – Why a 20mm Hangboard Edge Isn’t Really 20mm 
+# Not all 20mm Are Equal
 
 This is an over-engineered mono hangboard pickup for climbing 🥑
 
