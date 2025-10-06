@@ -1,5 +1,7 @@
 # mmono
 
+Why a 20mm hangboard edge isn’t really 20mm
+
 mmono is an overengineered mono hangboard pickup for climbing.
 
 ## Dimensions
