@@ -33,7 +33,7 @@ Unfortunately, there is no universal fillet radius for hangboards. Many manufact
 |---------------|------------|----------------------|--------|
 | **Tension**   | 10 mm      | 3.175 mm (≈ 1/8")    | [Tension Climbing](https://tensionclimbing.com/pages/hangboards) |
 | **lanta**     | 20 mm      | 7.5 mm               | [Edgemaster](https://www.instagram.com/reel/DPQD1eZAqU_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==) |
-| **Beastmaker**| 10 mm      | 8 mm                 | [Test4Climbing](https://test4climbing.com/equipment-needed) |
+| **Beastmaker**| 15-45 mm   | 8 mm                 | [Test4Climbing](https://test4climbing.com/equipment-needed) |
 | **Lattice**   | 20 mm      | 10 mm                | [Climbing.com](https://www.climbing.com/skills/training/tom-randalls-guide-to-better-hangboarding-part-1/) |
 
 > *Note: Needs more data but is hard to find.*
