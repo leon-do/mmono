@@ -1,4 +1,4 @@
-# Not all 20mm Are Equal
+# Not All Edges Are Equal
 
 This is an over-engineered mono hangboard pickup for climbing 🥑
 
