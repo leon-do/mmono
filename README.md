@@ -1,5 +1,7 @@
 # Not All Edges Are Equal
 
+Goal: Adjust depth based on edge radius.
+
 This is an over-engineered mono hangboard pickup for climbing 🥑
 
 ## Dimensions
