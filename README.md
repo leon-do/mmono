@@ -6,8 +6,8 @@ This is an over-engineered mono hangboard pickup for climbing 🥑
 
 ## Dimensions
 
-![](https://github.com/user-attachments/assets/5597e96b-52b6-4659-b957-9eba6fe262b5)
-![](https://github.com/user-attachments/assets/c39d3a4a-4358-43b5-bdd5-5bace4f8c19c)
+![](https://github.com/user-attachments/assets/60b006c6-f077-43fc-ad5e-1b736c72ddbb)
+![](https://github.com/user-attachments/assets/750c8208-1fac-4d8b-829a-9531bc1175f5)
 ![](https://github.com/user-attachments/assets/1f993b8e-7f63-4b9b-ace5-de8966478d78)
 
 
